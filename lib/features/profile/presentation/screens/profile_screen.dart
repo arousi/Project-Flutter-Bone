@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:itse304_project/core/widgets/custom_navbar.dart';
 import 'package:logger/logger.dart';
 
-import '../../../../core/widgets/customAppBar.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

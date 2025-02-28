@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_bloc/flutter_bloc.dart'; // Import BlocProvider
-import 'features/auth/logic/auth_cubit.dart';
+// Import BlocProvider
 
 import 'features/auth/presentation/screens/signupscreen.dart';
 import 'features/home/presentation/screens/homescreen.dart';

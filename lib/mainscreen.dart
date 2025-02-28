@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 import 'package:flutter_bloc/flutter_bloc.dart'; // Import BlocProvider
 import 'features/auth/logic/auth_cubit.dart'; // Import AuthCubit
-import 'package:go_router/go_router.dart'; // Import GoRouterState
+//import 'package:go_router/go_router.dart'; // Import GoRouterState
 
 import 'core/widgets/customAppBar.dart';
 import 'core/widgets/custom_navbar.dart';
@@ -10,7 +10,7 @@ import 'features/auth/presentation/screens/signupscreen.dart';
 
 class MainScreen extends StatefulWidget {
   final Widget child;
-  const MainScreen({Key? key, required this.child}) : super(key: key);
+  const MainScreen({super.key, required this.child});
 
   @override
   State<MainScreen> createState() => _MainScreenState();

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:itse304_project/core/widgets/customAppBar.dart';
 import 'package:logger/logger.dart';
 
-import '../../../../core/widgets/custom_navbar.dart';
 import '../../../auth/logic/auth_cubit.dart';
 import '../../../auth/presentation/screens/signupscreen.dart';
 
