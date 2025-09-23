@@ -6,7 +6,7 @@ import 'features/auth/presentation/screens/signupscreen.dart';
 import 'features/home/presentation/screens/homescreen.dart';
 import 'features/profile/presentation/screens/profile_screen.dart';
 import 'mainscreen.dart';
-import 'package:itse304_project/features/auth/presentation/screens/loginscreen.dart';
+import 'features/auth/presentation/screens/loginscreen.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>();
 final GlobalKey<NavigatorState> _shellNavigatorKey =

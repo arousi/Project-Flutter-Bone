@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPref {
@@ -11,22 +9,69 @@ class SharedPref {
     return _prefs!;
   }
 
-  Future<void> saveToken(String token) async {
-    log('Saving token: $token');
+  Future<void> saveString(String key, String value) async {
     final p = await prefs;
-    await p.setString('auth_token', token);
+    await p.setString(key, value);
   }
 
-  Future<String?> getToken() async {
+  Future<String?> getString(String key) async {
     final p = await prefs;
-    String? token = p.getString('auth_token');
-    log('Retrieved token: $token');
-    return token;
+    return p.getString(key);
   }
 
-  Future<void> removeToken() async {
-    log('Removing token');
+  Future<void> saveInt(String key, int value) async {
     final p = await prefs;
-    await p.remove('auth_token');
+    await p.setInt(key, value);
   }
+
+  Future<int?> getInt(String key) async {
+    final p = await prefs;
+    return p.getInt(key);
+  }
+
+  Future<void> saveBool(String key, bool value) async {
+    final p = await prefs;
+    await p.setBool(key, value);
+  }
+
+  Future<bool?> getBool(String key) async {
+    final p = await prefs;
+    return p.getBool(key);
+  }
+
+  Future<void> saveDouble(String key, double value) async {
+    final p = await prefs;
+    await p.setDouble(key, value);
+  }
+
+  Future<double?> getDouble(String key) async {
+    final p = await prefs;
+    return p.getDouble(key);
+  }
+
+  Future<void> saveStringList(String key, List<String> value) async {
+    final p = await prefs;
+    await p.setStringList(key, value);
+  }
+
+  Future<List<String>?> getStringList(String key) async {
+    final p = await prefs;
+    return p.getStringList(key);
+  }
+
+  Future<void> remove(String key) async {
+    final p = await prefs;
+    await p.remove(key);
+  }
+
+  Future<bool> containsKey(String key) async {
+    final p = await prefs;
+    return p.containsKey(key);
+  }
+
+  Future<void> clear() async {
+    final p = await prefs;
+    await p.clear();
+  }
+
 }
