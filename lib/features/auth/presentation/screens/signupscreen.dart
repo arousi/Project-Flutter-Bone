@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 
 import '../widgets/signup_form.dart';
+import '../widgets/auth_layout.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -19,13 +20,11 @@ class SignUpScreen extends StatelessWidget {
       },
       child: Scaffold(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        body: const SafeArea(
-          minimum: EdgeInsets.all(16),
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Align(
-                alignment: Alignment.center,
-                child: SizedBox(child: SignUpForm())),
+        body: AuthLayout(
+          title: 'Create Account',
+          child: const Padding(
+            padding: EdgeInsets.symmetric(vertical: 8.0),
+            child: SignUpForm(),
           ),
         ),
       ),
