@@ -3,6 +3,27 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  app_links
+  auto_updater_windows
+  connectivity_plus
+  desktop_drop
+  desktop_webview_window
+  file_saver
+  file_selector_windows
+  flutter_secure_storage_windows
+  hotkey_manager_windows
+  local_auth_windows
+  local_notifier
+  printing
+  protocol_handler_windows
+  screen_retriever_windows
+  share_plus
+  tray_manager
+  url_launcher_windows
+  webview_windows
+  window_manager
+  window_size
+  window_to_front
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
