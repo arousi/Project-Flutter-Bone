@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 
 import 'app_router.dart';
 import 'core/theme/theme_cubit.dart';
@@ -18,6 +19,7 @@ void main() async {
     logger.e('Failed to load theme', error: e);
   }
 
+  setUrlStrategy(const PathUrlStrategy());
   logger.i('App started');
   runApp(const MyApp());
 }
